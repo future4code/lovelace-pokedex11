@@ -1,8 +1,9 @@
 import React from "react"
+import { Router} from "./routes/Router.js"
 function App() {
   return (
     <div>
-     <h1>pokedex</h1>
+     <Router/>
     </div>
   );
 }
