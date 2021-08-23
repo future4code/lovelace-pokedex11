@@ -1,6 +1,6 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
-import UseRequestData from "./hooks/UseRequestData";
+import UseRequestData from "../hooks/UseRequestData";
 
 const HomePage= () => {
   const pokemonList = UseRequestData("https://pokeapi.co/api/v2/pokemon", {});
@@ -14,13 +14,15 @@ const HomePage= () => {
     pokemonList.results &&
     pokemonList.results.map((p) => {
       return (
+          <li>
         <button
           onClick={() => {
             goToDetailPage(p.name);
           }}
-        >
-          {p.name}
+        >detail
         </button>
+    <strong>{p.name}</strong>
+        </li>
       );
     });
 

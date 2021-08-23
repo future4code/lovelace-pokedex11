@@ -1,6 +1,6 @@
 import React from "react";
 import { useHistory, useParams } from "react-router-dom";
-import UseRequestData from "./hooks/UseRequestData";
+import UseRequestData from "../hooks/UseRequestData";
 
 const DetailsPage = () => {
   const params = useParams();
