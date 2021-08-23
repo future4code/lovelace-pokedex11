@@ -1,5 +1,5 @@
 import React from "react";
-import { useHistory } from "react-router-dom";
+import { NavLink, useHistory } from "react-router-dom";
 import UseRequestData from "./hooks/UseRequestData";
 
 const HomePage= () => {
@@ -14,13 +14,15 @@ const HomePage= () => {
     pokemonList.results &&
     pokemonList.results.map((p) => {
       return (
+          <li>
         <button
           onClick={() => {
             goToDetailPage(p.name);
           }}
-        >
-          {p.name}
+        > detalhe
         </button>
+         {p.name}
+         </li>
       );
     });
 
