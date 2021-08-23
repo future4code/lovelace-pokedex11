@@ -1,9 +1,9 @@
 # POKEDEX
 
 Nome dos integrantes: 
-- Pessoa 1
-- Pessoa 2
-- Pessoa 3
+- matheus de souza dos santos
+- felipe vieira de melo
+- rafael bento
 
 Link do Surge: www.link.com.br
 
