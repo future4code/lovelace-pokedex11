@@ -1,9 +1,9 @@
 # POKEDEX
 
 Nome dos integrantes: 
-- matheus de souza dos santos
-- felipe vieira de melo
-- rafael bento
+- Matheus De Souza Dos Santos
+- Felipe Vieira De Melo
+- Rafael Bento
 
 Link do Surge: www.link.com.br
 
