@@ -14,7 +14,7 @@ export const Header =()=>{
     return(
         <Container>
         <h1>lista de pokemons</h1>
-       </Container>gi
+       </Container>
     )
 }
 
