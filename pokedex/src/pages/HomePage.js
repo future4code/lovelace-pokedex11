@@ -3,6 +3,15 @@ import { useHistory } from "react-router-dom";
 import UseRequestData from "../hooks/UseRequestData";
 import PokeCard from "../components/PokeCard";
 import Header from "../components/Header";
+import styled from "styled-components"
+
+
+const Container = styled.div`
+display:grid;
+grid-template-columns: 1fr 1fr 1fr;
+
+
+`
 
 
 const HomePage= () => {
@@ -20,16 +29,24 @@ const HomePage= () => {
     }); 
 
   return (
+
     <>
 
   <Header/>
      {/*  <button onClick={goToDetailPage}>detalhes</button> */}
-      {lista} 
 
+    <Container>
+      
+      
+
+      {lista} 
      
     
 
-    </>
+    </Container>
+
   );
 };
+
+
 export default HomePage;
