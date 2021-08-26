@@ -4,6 +4,17 @@ import UseRequestData from "../hooks/UseRequestData";
 import PokeCard from "../components/PokeCard";
 import Header from "../components/Header";
 
+import styled from "styled-components"
+
+
+
+const Container = styled.div`
+display:grid;
+grid-template-columns: 1fr 1fr 1fr;
+
+
+`
+
 
 const HomePage= () => {
   const pokemonList = UseRequestData("https://pokeapi.co/api/v2/pokemon", {});
@@ -20,16 +31,23 @@ const HomePage= () => {
     }); 
 
   return (
+
     <>
 
   <Header/>
      {/*  <button onClick={goToDetailPage}>detalhes</button> */}
-      {lista} 
 
+    <Container>
+      
+
+      {lista} 
      
     
 
-    </>
+    </Container>
+
   );
 };
+
+
 export default HomePage;
