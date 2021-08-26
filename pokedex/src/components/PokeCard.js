@@ -1,10 +1,8 @@
 import React from "react"
 import styled from "styled-components"
+import UseRequestData from "../hooks/UseRequestData"
 
 const Card = styled.div`
-display: grid;
-grid-template: column;
-
 border: 1px solid black;
 width: 200px;
 height: 200px;
@@ -20,13 +18,16 @@ const Button = styled.div`
 
 `
 
-export const PokeCard =()=>{
+export const PokeCard =(props)=>{
+    console.log('props',props.url)
+   const list= UseRequestData(props.url, {});
+   console.log(list)
     return(
         <Card>
-        <Button>
-        <button>Adicionar</button>
-        <button>Ver detalhes</button>
-        </Button>
+        {list.sprites && list.sprites.front_default && (
+        <img src={list.sprites.front_default} alt="poke" />
+      )}
+      {list.name}
         </Card>
     )}
 
