@@ -18,6 +18,7 @@ export const Router=()=>{
             <Route exact path={"/detalhes/:pokemon"}>
             <DetailsPage/>
             </Route>
+        
             <Route>
                 <ErrorPage/>
             </Route>

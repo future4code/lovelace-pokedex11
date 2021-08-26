@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 import UseRequestData from "../hooks/UseRequestData"
-
 const Card = styled.div`
 border: 1px solid black;
 width: 200px;
@@ -28,6 +27,7 @@ export const PokeCard =(props)=>{
         <img src={list.sprites.front_default} alt="poke" />
       )}
       {list.name}
+      <button></button>
         </Card>
     )}
 

@@ -1,8 +1,13 @@
 import React from "react"
+import Header from "../components/Header"
+
 
 export const PokedexPage =()=>{
-    return(
+    return(<>
+        <Header/>
        <h1>Pokedex Page</h1>
+   </>
+   
     )
 }
 
