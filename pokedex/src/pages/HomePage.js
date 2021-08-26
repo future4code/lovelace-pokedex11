@@ -16,6 +16,7 @@ grid-template-columns: 1fr 1fr 1fr;
 `
 
 
+
 const HomePage= () => {
   const pokemonList = UseRequestData("https://pokeapi.co/api/v2/pokemon", {});
   const history = useHistory();
@@ -45,7 +46,7 @@ const HomePage= () => {
     
 
     </Container>
-
+</>
   );
 };
 

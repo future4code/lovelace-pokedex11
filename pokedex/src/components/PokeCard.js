@@ -8,6 +8,7 @@ height: 200px;
 margin-left: 10px;
 align-items:center;
 justify-content: center
+display: flex;
 
 `
 
@@ -31,11 +32,11 @@ export const PokeCard =(props)=>{
       )}
       {list.name}
 
-      <button></button>
-
-            <Button>
+    
             <button>Detalhes</button>
             <button>Adicionar</button>
+            <Button>
+            
             </Button>
 
         </Card>
