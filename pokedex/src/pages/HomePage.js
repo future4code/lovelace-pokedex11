@@ -2,7 +2,15 @@ import React from "react";
 import { useHistory } from "react-router-dom";
 import UseRequestData from "../hooks/UseRequestData";
 import PokeCard from "../components/PokeCard";
+import styled from "styled-components"
 
+
+const Container = styled.div`
+display:grid;
+grid-template-columns: 1fr 1fr 1fr;
+
+
+`
 
 
 const HomePage= () => {
@@ -20,14 +28,18 @@ const HomePage= () => {
     }); 
 
   return (
-    <>
-      <h1>pokemon list page</h1>
+    <Container>
+      
+      
+     
       {lista} 
-
      
     
 
-    </>
+    </Container>
+
   );
 };
+
+
 export default HomePage;
