@@ -1,13 +1,15 @@
 import React from "react"
+import { useHistory } from "react-router-dom"
 import styled from "styled-components"
 import UseRequestData from "../hooks/UseRequestData"
+
 const Card = styled.div`
 border: 1px solid #5F8CE8;
 width: 200px;
 height: 200px;
-margin-left: 10px;
-align-items:center;
-justify-content: center
+button{
+    margin-bottom: 0px;
+}
 
 `
 
@@ -21,9 +23,12 @@ const Button = styled.div`
 `
 
 export const PokeCard =(props)=>{
-    console.log('props',props.url)
    const list= UseRequestData(props.url, {});
-   console.log("list",list)
+   const history = useHistory()
+
+    const goToDetailPage=(pokemon)=>{
+        history.push(`/detalhes/${pokemon}`)
+    }
     return(
         <Card>
         {list.sprites && list.sprites.front_default && (
@@ -31,12 +36,9 @@ export const PokeCard =(props)=>{
       )}
       {list.name}
 
-      <button></button>
 
-            <Button>
-            <button>Detalhes</button>
+      <button onClick={()=>{goToDetailPage(list.name)}}>Detalhes</button>
             <button>Adicionar</button>
-            </Button>
 
         </Card>
     )}
