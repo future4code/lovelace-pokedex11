@@ -7,8 +7,16 @@ import { array } from "prop-types";
 
 const ContainerMaior = styled.div`
 display: grid;
-grid-template-columns:300px 200px 200px 200px;
+grid-template-columns:300px 200px 200px 400px;
 grid-template-rows:300px;
+
+@media(max-width: 800px) {
+
+  grid-template-columns:50% 50% ;
+  grid-template-rows:50%;
+ 
+  
+}
 
 `
 const Poderes = styled.div`
@@ -19,12 +27,22 @@ display: flex;
 align-items: center;
 justify-content: space-around;
 flex-direction: column;
+
+@media(max-width: 800px) {
+  width: 100%
+}
 `
 const NavImg = styled.div`
 display: inline-block;
 background-color: lightseagreen;
 border: 1px solid black;
 width:50vw;
+
+
+@media(max-width: 800px) {
+  width: 100%
+}
+
 `
 const Moves = styled.div`
 background-color: lightsalmon;
@@ -33,6 +51,10 @@ display: flex;
 align-items: center;
 justify-content: space-around;
 flex-direction: column;
+
+@media(max-width: 800px) {
+  width: 100%
+}
 `
 const Tipo=styled.div`
 display: flex;
@@ -41,6 +63,10 @@ border: 1px solid black;
 align-items: center;
 justify-content: space-around;
 flex-direction: column;
+
+@media(max-width: 800px) {
+  width: 100%
+}
 `
 const DetailsPage = () => {
   const params = useParams();
@@ -60,7 +86,6 @@ const DetailsPage = () => {
     <div>
          <Header />
     <ContainerMaior>
-
    
 
       <NavImg>
@@ -105,9 +130,12 @@ const DetailsPage = () => {
     </Tipo>
 
 
-    </ContainerMaior>
+    
     <button onClick={goToHome}>voltar</button>
-    </div>
+    </ContainerMaior>
+
+  </div>
+   
   );
 };
 export default DetailsPage;
