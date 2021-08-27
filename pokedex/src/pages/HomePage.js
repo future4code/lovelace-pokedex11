@@ -17,7 +17,8 @@ grid-template-rows:1fr 1fr 1fr 1fr ;
 `
 
 
-const HomePage= () => {
+const HomePage= (props) => {
+  console.log('props da home',props)
 
   const pokemonList = UseRequestData("https://pokeapi.co/api/v2/pokemon", {});
   const history = useHistory();
@@ -25,7 +26,7 @@ const HomePage= () => {
 
    const lista = pokemonList.results?.map((p) => {
       return (
-          <PokeCard url={p.url}/>
+          <PokeCard  addCart={props.addCart}url={p.url}/>
       );
     }); 
 
@@ -33,7 +34,7 @@ const HomePage= () => {
 
     <>
 
-  <Header/>
+  <Header cart={props}/>
 
     <Container>
     
