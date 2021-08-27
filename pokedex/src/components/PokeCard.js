@@ -12,7 +12,6 @@ button{
 }
 
 `
-
 const Button = styled.div`
     display:flex;
     justify-content: center;
@@ -21,8 +20,8 @@ const Button = styled.div`
     align-items: center;
 
 `
-
 export const PokeCard =(props)=>{
+    
    const list= UseRequestData(props.url, {});
    const history = useHistory()
 

@@ -6,13 +6,11 @@ import { goPokedex } from "../routes/cordinator";
 const Container = styled.div`
 display: flex;
 align-items: center;
-
 padding: 10px;
 justify-content: space-around;
 width: 100%;
 height: 50px;
 background-color: #5F8CE8;
-
 `
 export const Header =()=>{
     const history = useHistory();

@@ -10,13 +10,14 @@ import styled from "styled-components"
 
 const Container = styled.div`
 display:grid;
-grid-template-columns: 1fr 1fr 1fr;
+grid-template-columns:  1fr 1fr 1fr 1fr;
+grid-template-rows:1fr 1fr 1fr 1fr ;
 
 
 `
 
-
 const HomePage= () => {
+
   const pokemonList = UseRequestData("https://pokeapi.co/api/v2/pokemon", {});
   const history = useHistory();
 
