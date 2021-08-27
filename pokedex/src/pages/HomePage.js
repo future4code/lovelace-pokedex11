@@ -10,20 +10,18 @@ import styled from "styled-components"
 
 const Container = styled.div`
 display:grid;
-grid-template-columns: 1fr 1fr 1fr;
+grid-template-columns:  1fr 1fr 1fr 1fr;
+grid-template-rows:1fr 1fr 1fr 1fr ;
 
 
 `
 
 
-
 const HomePage= () => {
+
   const pokemonList = UseRequestData("https://pokeapi.co/api/v2/pokemon", {});
   const history = useHistory();
 
-/*    const goToDetailPage = () => {
-    history.push(`/pokedex`);
-  }; */
 
    const lista = pokemonList.results?.map((p) => {
       return (
@@ -36,14 +34,11 @@ const HomePage= () => {
     <>
 
   <Header/>
-     {/*  <button onClick={goToDetailPage}>detalhes</button> */}
 
     <Container>
-      
-
+    
       {lista} 
      
-    
 
     </Container>
 </>
