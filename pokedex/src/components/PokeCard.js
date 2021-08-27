@@ -10,23 +10,21 @@ height: 200px;
 
 button{
     margin-bottom: 0px;
+    margin-top: 10px;
 }
 
-margin-left: 10px;
+
 align-items:center;
-justify-content: center
 display: flex;
+flex-direction: column;
 
-
-`
-const Button = styled.div`
-    display:flex;
-    justify-content: center;
-    width:100%;
-    margin-top: 100%;
-    align-items: center;
+@media(max-width: 800px) {
+    width: 100%
+  }
 
 `
+
+
 export const PokeCard =(props)=>{
     
     
@@ -46,7 +44,9 @@ export const PokeCard =(props)=>{
 
 
       <button onClick={()=>{goToDetailPage(list.name)}}>Detalhes</button>
+
             <button onClick={()=>{props.addCart(list)}}>Adicionar</button>
+
 
         </Card>
     )}

@@ -12,7 +12,15 @@ const Container = styled.div`
 display:grid;
 grid-template-columns:  1fr 1fr 1fr 1fr;
 grid-template-rows:1fr 1fr 1fr 1fr ;
+align-itens: center;
 
+
+
+@media(max-width: 800px) {
+  
+  grid-template-columns: 50% 50%;
+  grid-template-rows:1fr 1fr 1fr 1fr ;
+}
 
 `
 

@@ -11,6 +11,16 @@ justify-content: space-around;
 width: 100%;
 height: 50px;
 background-color: #5F8CE8;
+
+
+
+
+@media(max-width: 800px) {
+  width: 100%;
+  
+
+}
+
 `
 export const Header =()=>{
     const history = useHistory();
