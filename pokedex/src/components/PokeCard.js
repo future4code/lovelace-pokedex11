@@ -47,9 +47,6 @@ export const PokeCard =(props)=>{
       <button onClick={()=>{goToDetailPage(list.name)}}>Detalhes</button>
             <button>Adicionar</button>
 
-            <button>Adicionar</button>
-
-
         </Card>
     )}
 
