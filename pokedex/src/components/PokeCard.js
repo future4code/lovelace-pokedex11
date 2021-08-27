@@ -27,7 +27,8 @@ flex-direction: column;
 
 export const PokeCard =(props)=>{
     
-   const list= UseRequestData(props.url, {});
+    
+   const list= UseRequestData(props.url,{});
    const history = useHistory()
 
     const goToDetailPage=(pokemon)=>{
@@ -43,8 +44,8 @@ export const PokeCard =(props)=>{
 
 
       <button onClick={()=>{goToDetailPage(list.name)}}>Detalhes</button>
-            <button>Adicionar</button>
 
+            <button onClick={()=>{props.addCart(list)}}>Adicionar</button>
 
 
         </Card>
