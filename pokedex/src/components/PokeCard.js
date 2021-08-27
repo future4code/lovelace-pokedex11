@@ -7,9 +7,16 @@ const Card = styled.div`
 border: 1px solid #5F8CE8;
 width: 200px;
 height: 200px;
+
 button{
     margin-bottom: 0px;
 }
+
+margin-left: 10px;
+align-items:center;
+justify-content: center
+display: flex;
+
 
 `
 const Button = styled.div`
@@ -36,8 +43,12 @@ export const PokeCard =(props)=>{
       {list.name}
 
 
+
       <button onClick={()=>{goToDetailPage(list.name)}}>Detalhes</button>
             <button>Adicionar</button>
+
+            <button>Adicionar</button>
+
 
         </Card>
     )}

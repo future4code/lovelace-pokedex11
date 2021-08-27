@@ -16,6 +16,7 @@ grid-template-rows:1fr 1fr 1fr 1fr ;
 
 `
 
+
 const HomePage= () => {
 
   const pokemonList = UseRequestData("https://pokeapi.co/api/v2/pokemon", {});
