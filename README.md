@@ -1,11 +1,12 @@
 # POKEDEX
 
 Nome dos integrantes: 
-- Pessoa 1
-- Pessoa 2
-- Pessoa 3
+- Matheus De Souza Dos Santos
+- Felipe Vieira De Melo
+- Rafael Bento
 
-Link do Surge: www.link.com.br
+Link do Surge: tawdry-scarf.surge.sh
+
 
 O que funciona:
 - Item 1
